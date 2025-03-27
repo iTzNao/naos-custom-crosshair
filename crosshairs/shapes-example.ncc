@@ -1,0 +1,67 @@
+// Nao's Custom Crosshair Configuration File
+
+// -----------------------------------------
+
+// This file defines the settings and shapes for a custom crosshair.
+// Each crosshair consists of a name, a global size, and one or more shapes.
+
+// Crosshair Settings:
+// - name: The name of the crosshair preset.
+// - size: A global scaling factor applied to all shapes (default is 1).
+
+// Crosshair Shapes:
+// Supported shape types: "circle", "line", "triangle", "rectangle", "arc".
+
+// Common Parameters:
+// - color: The color of the shape in "R,G,B" format or "rgb" for dynamic rainbow mode.
+// - opacity: The transparency of the shape (0.0 = fully transparent, 1.0 = fully opaque).
+// - weight: The thickness of the shape.
+// - filled: Whether the shape is filled (1 = filled, 0 = not filled).
+// - rotation: The rotation of the shape in degrees (0-360).
+
+// Hide Settings:
+// - hide_on_ads: Whether to hide the crosshair while aiming down sights (1 = yes).
+// - hide_on_hipfire: Whether to hide the crosshair while hipfiring (1 = yes).
+
+// -----------------------------------------
+
+// Rectangle-Specific Parameters:
+// - x, y: The center position of the rectangle relative to the screen center.
+// - width: The width of the rectangle.
+// - height: The height of the rectangle.
+
+// Circle-Specific Parameters:
+// - x, y: The center position of the circle relative to the screen center.
+// - radius: The radius of the circle.
+
+// Triangle-Specific Parameters:
+// - x, y: The center position of the triangle relative to the screen center.
+// - width: The width of the triangle.
+// - height: The height of the triangle.
+// - right_angle: Whether the triangle is a right-angled triangle (1 = yes, 0 = no).
+
+// Line-Specific Parameters:
+// - x1, y1: The starting point of the line relative to the screen center.
+// - x2, y2: The ending point of the line relative to the screen center.
+
+// Arc-Specific Parameters:
+// - x, y: The center position of the arc relative to the screen center.
+// - radius: The radius of the arc.
+// - start_angle: The starting angle of the arc in degrees.
+// - span_angle: The span of the arc in degrees.
+
+// -----------------------------------------
+
+// Crosshair Settings:
+name=Shapes Example
+size=10
+
+// Crosshair Shapes:
+circle x=-10 y=0 radius=1 weight=1 color=255,0,0
+rectangle x=-6 y=0 width=2 height=2 weight=1 color=0,255,0
+triangle x=-2 y=0 width=2 height=2 weight=1 color=0,0,255
+triangle x=2 y=0 width=2 height=2 weight=2 color=255,255,0 right_angle=1
+line x1=5 y1=-1 x2=7 y2=1 weight=2 color=0,255,255
+arc x=10 y=0 radius=1 start_angle=45 span_angle=135 weight=2 color=255,0,255
+
+rectangle x=0 y=0 width=24 height=4 weight=2 color=rgb filled=0
